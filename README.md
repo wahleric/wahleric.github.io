@@ -1,4 +1,4 @@
-# **Eric Wahlquist**
+![Eric Wahlquist](images/mdTitle.jpg)
 ---
 ### Welcome!
 
