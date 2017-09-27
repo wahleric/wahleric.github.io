@@ -1,4 +1,4 @@
-![Eric Wahlquist](images/mdTitle.jpg)
+# **ERIC WAHLQUIST**
 ---
 ### Welcome!
 
@@ -7,3 +7,13 @@
 [View my website](https://wahleric.github.io/index.html)
 
 This is the repository for my personal website, which will feature various projects that I have worked on.
+
+'''java
+public class NextSteps {
+    public static void main(String[] args) {
+        visitMyWebsite();
+        checkOutMyWork();
+        contactMe();
+    }
+}
+'''
