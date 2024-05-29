@@ -1,6 +1,10 @@
 .section {
 	padding-bottom: 1rem;
 
+  .section-header {
+    border-bottom: 1px solid black;
+  }
+
   .section-content {
     margin: 1rem 0;
 
@@ -8,19 +12,30 @@
       padding: 0;
       list-style-type: none;
 
-      li.item {
-        &:not(:first-child) {
+      & > li.item:not(:first-child) {
           margin-top: 1rem;
-        }
-
-        .item-title {
-          font-weight: bold;
-        }
       }
     }
   }
 }
 
-.section-header {
-	border-bottom: 1px solid black;
+#experience {
+  ul.position-list {
+      padding: 0;
+      list-style-type: none;
+
+      li.position .position-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+      }
+  }
+}
+
+.ellipsifiable {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
