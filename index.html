@@ -10,12 +10,13 @@
         <title>Eric Wahlquist, Software Engineer</title>
         <link rel="icon" type="image/x-icon" href="images/ericwahlquist.ico" />
         <link rel="stylesheet" href="css/main.css" />
+        <script type="text/javascript" src="main.js" defer></script>
     </head>
     <body>
         <div id="resume">
             <div class="grid-container">
                 <div class="left-column">
-                    <div class="photo-contact">
+                    <div id="photo-contact">
                         <img src="images/ericwahlquist.webp" alt="Eric Wahlquist"/>
                         <ul class="contact-list">
                             <li>
@@ -44,14 +45,23 @@
                             </ul>
                         </div>
                     </div>
+                    <div id="controls">
+                        <input type="checkbox" id="mode_selector" name="mode_selector" class="toggle-slider" aria-label="Toggle dark or light mode"></input>
+                    </div>
                 </div>
+
+
+
+
+
+
+
+
                 <div class="right-column">
-                    <div class="header">
+                    <div id="header">
                         <h1>Eric Wahlquist</h1>
                         <h2 class="description">Software engineer with 5+ years of experience working across the full stack. Proficient in JavaScript, HTML, CSS, and PHP. Team player with experience leading complex projects</h2>
                     </div>
-
-
                     <div id="experience" class="section">
                         <div class="section-header">Experience</div>
                         <div class="section-content">

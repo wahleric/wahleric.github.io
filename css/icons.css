@@ -90,3 +90,11 @@ Generated using nucleoapp.com
 .icon-mail::before {
   content: "\ea06";
 }
+
+.icon-sun::before {
+  content: "\ea07";
+}
+
+.icon-moon::before {
+  content: "\ea09";
+}
