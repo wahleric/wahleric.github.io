@@ -1,0 +1,18 @@
+:root {
+  --transition-speed: 0.2s;
+  --shadow-photo-contact-img: rgb(80, 80, 80);
+
+  &.light {
+    --text-primary: black;
+    --bg-primary: white;
+    --bg-secondary: rgb(235, 235, 235);
+    --icon-color: rgb(100, 100, 100);
+  }
+
+  &.dark {
+    --text-primary: white;
+    --bg-primary: black;
+    --bg-secondary: rgb(20, 20, 20);
+    --icon-color: rgb(155, 155, 155);
+  }
+}

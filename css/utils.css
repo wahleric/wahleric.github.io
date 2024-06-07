@@ -1,0 +1,9 @@
+.icon-xl {
+  font-size: 1.8em;
+}
+
+.ellipsifiable {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
