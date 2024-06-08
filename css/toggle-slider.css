@@ -6,34 +6,32 @@
   width: 3rem;
   height: 1.5rem;
   border-radius: 1rem;
-  position: relative;  padding: 1px;
+  position: relative;
   border: 1px solid var(--text-primary);
   box-shadow: 0 0 0.2rem var(--text-primary);
   margin: 0;
   background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: row;
 }
 
 .toggle-slider:before {
   content: "\ea09";
-  color: var(--text-primary);
-  background-color: var(--bg-primary);
-  width: 1.3rem;
-  height: 1.3rem;
-  line-height: 1.3rem;
-  text-align: center;
+  color: var(--bg-primary);
+  background-color: var(--text-primary);
+  align-self: center;
+  height: 100%;
+  aspect-ratio: 1/1;
   border-radius: 100%;
-  border: 1px solid var(--text-primary);
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  -webkit-transform: translate(0, -50%);
+  transform: translate(0, 0);
   transition: transform var(--transition-speed), color var(--transition-speed);
-  -webkit-transition: transform var(--transition-speed), color var(--transition-speed);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .toggle-slider:checked:before {
   content: '\ea07';
-  transform: translate(1.3rem, -50%);
-  -webkit-transform: translate(1.3rem, -50%);;
+  transform: translate(1.5rem, 0);
 }
