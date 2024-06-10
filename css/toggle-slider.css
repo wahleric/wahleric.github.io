@@ -1,37 +1,37 @@
 .toggle-slider {
-  cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
-  font: normal normal normal 1em/1 'Icons';
   width: 3rem;
-  height: 1.5rem;
-  border-radius: 1rem;
+  aspect-ratio: 2 / 1;
   position: relative;
-  border: 1px solid var(--text-primary);
-  box-shadow: 0 0 0.2rem var(--text-primary);
   margin: 0;
+  cursor: pointer;
+  border-radius: 100vh;
+  border: 1px solid var(--text-primary);
   background-color: var(--bg-primary);
-  display: flex;
-  flex-direction: row;
+  box-shadow: 0 0 0.2rem var(--text-primary);
 }
 
 .toggle-slider:before {
   content: "\ea09";
+  font-family: 'Icons';
+  font-size: initial;
   color: var(--bg-primary);
   background-color: var(--text-primary);
-  align-self: center;
   height: 100%;
   aspect-ratio: 1/1;
-  border-radius: 100%;
-  transform: translate(0, 0);
-  transition: transform var(--transition-speed), color var(--transition-speed);
+  border-radius: inherit;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
+  left: 0;
+  top: -1px;
+  border: 1px solid var(--text-primary);
+  position: absolute;
 }
 
 .toggle-slider:checked:before {
   content: '\ea07';
-  transform: translate(1.5rem, 0);
+  left: unset;
+  right: 0;
 }
